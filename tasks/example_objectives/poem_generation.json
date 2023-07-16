@@ -1,0 +1,37 @@
+[
+
+{
+  "objective": "Write a poem",
+  "tasklist": [
+    {
+      "id": 1,
+      "task": "Use text_completion to generate a title for the poem",
+      "skill": "text_completion",
+      "dependent_task_ids": []
+    },
+    {
+      "id": 2,
+      "task": "Use text_completion to generate the first stanza of the poem",
+      "skill": "text_completion",
+      "dependent_task_ids": [1]
+    },
+    {
+      "id": 3,
+      "task": "Use text_completion to generate the second stanza of the poem",
+      "skill": "text_completion",
+      "dependent_task_ids": [2]
+    },
+    {
+      "id": 4,
+      "task": "Use text_completion to generate the third stanza of the poem",
+      "skill": "text_completion",
+      "dependent_task_ids": [3]
+    },
+    {
+      "id": 5,
+      "task": "Use text_completion to generate the final stanza of the poem",
+      "skill": "text_completion",
+      "dependent_task_ids": [4]
+    }
+  ]
+}]
